@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Font-h1'; /* Choose a name for your font */
+    src: url('Monoton-Regular.ttf') format('woff2');
+    /* Add additional font formats if required */
+    font-weight: normal; /* or bold */
+    font-style: normal; /* or italic */
+  }
+  
+*
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#body
+{
+    width: fit-content;
+    height: 10000px;
+    background-color: #19194d;
+    overflow: hidden;
+    position: relative;
+}
+#logo-img
+{
+    width:15rem;
+    margin-top: -10rem;
+    position: relative;
+    z-index: 2;
+}
+#logo-img path
+{
+    fill: silver;
+}
+#nav-bar
+{
+    display: flex;
+    list-style: none;
+    margin-left: 50rem;
+    margin-top: -18rem;
+    position: relative;
+    z-index: 4;
+    color:bisque;
+}
+#nav-bar li
+{
+    margin-left: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+}
+
+.stick
+{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4040bf;
+    box-shadow: 0px 0px 4px 1px #4040bf;
+    margin-bottom: -.5vw;
+    transform-origin: right;
+    transition-delay: 600ms;
+    transition-duration: 800ms;
+    transition-property: all;
+    scale: 0;
+}
+.red
+{
+    background-color: #ff1a1a;
+    box-shadow: 0px 0px 4px 1px #ff1a1a;
+    top: 0;
+    margin-top: -.5vw;
+    transform-origin: left;
+}
+#nav-bar li:hover .stick
+{
+    scale: 1;
+}
+
+#nav-bar li::after
+{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #4040bf;
+    margin-right: -.8vw;
+    box-shadow: 0px 0px 5px 2px #4040bf;
+    transform-origin: top;
+    scale: 0;
+    transition: all 800ms;
+}
+#nav-bar li:hover:after
+{
+    scale: 1;
+}
+#nav-bar li::before
+{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff1a1a;
+    margin-left: -.8vw;
+    box-shadow: 0px 0px 5px 2px #ff1a1a;
+    transform-origin: bottom;
+    scale: 0;
+    transition: all 800ms;
+}
+#nav-bar li:hover::before
+{
+    scale: 1;
+}
+#h1
+{
+    font-size: 4rem;
+    margin-top: 11rem;
+    margin-left: 10rem;
+    color: transparent;
+    background:linear-gradient(to bottom left , #4040bf , #ff1a1a);
+    background-clip: text;
+    text-shadow: 10px 10px 20px 10px #4040bf;
+    width: fit-content;
+    font-family: Font-h1;
+    position: relative;
+    z-index: 2;
+}   
+.cir_inmation
+{
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+    background-color: #4040bf;
+    box-shadow: 0px 0px 10px 8px #4040bf;
+    transition: all 5s;
+    animation: alternate-reverse box-sh 1s infinite;
+    z-index: 2;
+}
+.red-crc
+{
+    background-color: #ff1a1a;
+    box-shadow: 0px 0px 10px 8px #ff1a1a;
+    animation: alternate-reverse box-sh 1s infinite;
+}
+@keyframes box-sh
+{
+    100%
+    {
+        box-shadow: 0px 0px 0px 0px;
+    }
+}
+.style_stick
+{
+    width: 60rem;
+    rotate: -45deg;
+    z-index: 1;
+    height: 3rem;
+    background-color: #4040bf;
+    position: absolute;
+    box-shadow: 0px 0px 10px 8px #4040bf;
+}
+.red-stick
+{
+    background-color: #ff1a1a;
+    box-shadow: 0px 0px 10px 8px #ff1a1a;
+}
+#vedio-back
+{
+    width: 78rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}

@@ -1,6 +1,6 @@
 function randomPosition(element) {
-    const randomX = Math.floor(Math.random() * 1000);
-    const randomY = Math.floor(Math.random() * 500);
+    const randomX = Math.random(1,5) * 1000;
+    const randomY = Math.random(1,5) * 500;
     element.style.left = `${randomX}px`;
     element.style.top = `${randomY}px`;
 }

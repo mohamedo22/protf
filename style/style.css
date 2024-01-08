@@ -68,10 +68,11 @@
 .red
 {
     background-color: #ff1a1a;
-    box-shadow: 0px 0px 4px 1px #ff1a1a;
+    box-shadow: 0px 0px 5px 2px #ff1a1a;
     top: 0;
     margin-top: -.5vw;
     transform-origin: left;
+    height: .5px;
 }
 #nav-bar li:hover .stick
 {

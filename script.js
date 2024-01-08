@@ -1,8 +1,6 @@
 function randomPosition(element) {
-    const maxWidth = window.innerWidth - element.clientWidth;
-    const maxHeight = window.innerHeight - element.clientHeight;
-    const randomX = Math.floor(Math.random() * maxWidth);
-    const randomY = Math.floor(Math.random() * maxHeight);
+    const randomX = Math.floor(Math.random() * 1000);
+    const randomY = Math.floor(Math.random() * 500);
     element.style.left = `${randomX}px`;
     element.style.top = `${randomY}px`;
 }
